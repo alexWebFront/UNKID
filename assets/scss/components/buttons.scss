@@ -1,0 +1,26 @@
+@import "../variables";
+
+.btn {
+  border-radius: 40px;
+  padding: 12px 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 122.2%;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: $color-white;
+  background: $color-violet-heading;
+}
+
+.btn-outline {
+  color: $color-black;
+  border: 1px solid $color-black;
+}
+
+.btn-circle{
+  background: $color-violet-light;
+  border-radius: 1000px;
+}

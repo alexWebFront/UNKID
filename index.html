@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="header__container container">
             <div class="header__logo">
                 <img src="./assets/svg/header-logo.svg" alt="Логотип">
             </div>
@@ -24,24 +24,30 @@
                 </ul>
             </nav>
             <div class="account">
-                <a class="registration" href="#">Регистрация</a>
-                <a class="sign-in" href="#">Войти</a>
+                <div class="btn btn-primary">Регистрация</div>
+                <div class="btn btn-outline">Войти</div>
             </div>
-        </header>
-        <main>
-            <!--            <section>-->
-            <!--                <div class="left-content">-->
-            <!--                    <h1>Английский для детей</h1>-->
-            <!--                </div>-->
-            <!--                <div class="right-content">-->
-            <!--                    <img src="./assets/images/image_1.svg" alt="">-->
-            <!--                </div>-->
+        </div>
 
-            <!--            </section>-->
-        </main>
+    </header>
+    <main>
+        <div class="main__container container">
+
+        </div>
+    </main>
+    <div class="animals">
+        <div class="animals__container">
+            <div class="animals__left-content">
+                <img src="./assets/svg/heart.svg" alt="Сердце">
+                <p>Благодаря вам мы помогаем бездомным животным</p>
+            </div>
+            <div class="animals__right-content">
+                <img src="./assets/svg/cat-dog.svg" alt="Кошка и собака">
+            </div>
+        </div>
     </div>
     <footer class="footer">
-        <div class="container footer__container">
+        <div class=" footer__container container">
             <div class="footer__info">
                 <div class="footer__logo">
                     <img src="./assets/svg/footer-logo.svg" alt="Логотип">
@@ -78,11 +84,48 @@
                     <a href="mailto:support@uni-kid.ru">support@uni-kid.ru</a>
                 </div>
                 <div class="social">
-                    <a href="#">
-                        <img src="./assets/svg/icon-vk.svg" alt="Вконтакте">
+                    <a href="#vk">
+                        <svg style="display: none">
+                            <symbol id="vk" viewBox="0 0 28 24">
+                                <g>
+                                    <path d="M26.7723 1.13997C26.959 0.519975 26.7723 0.0653076 25.8897
+                                0.0653076H22.9657C22.2217 0.0653076 21.8817 0.458642 21.695 0.890642C21.695
+                                0.890642 20.2083 4.51597 18.1017 6.86664C17.4217 7.55064 17.111 7.76664 16.7403
+                                 7.76664C16.555 7.76664 16.2857 7.55064 16.2857 6.93064V1.13997C16.2857 0.395975
+                                 16.071 0.0653076 15.451 0.0653076H10.8563C10.3923 0.0653076 10.1123 0.409308
+                                 10.1123 0.737308C10.1123 1.44131 11.1657 1.60397 11.2737 3.58798V7.89197C11.2737
+                                  8.83464 11.1043 9.00664 10.731 9.00664C9.74033 9.00664 7.32966 5.36798 5.89899
+                                  1.20264C5.62033 0.393308 5.33899 0.0666415 4.59232 0.0666415H1.66966C0.833659
+                                   0.0666415 0.666992 0.459975 0.666992 0.891975C0.666992 1.66797 1.65766 5.50797
+                                    5.28166 10.5866C7.69766 14.0546 11.099 15.9346 14.1977 15.9346C16.055 15.9346
+                                    16.2843 15.5173 16.2843 14.7973V12.176C16.2843 11.3413 16.4617 11.1733 17.0497
+                                     11.1733C17.4817 11.1733 18.2257 11.392 19.9603 13.0626C21.9417 15.044 22.2697
+                                     15.9333 23.383 15.9333H26.3057C27.1403 15.9333 27.5577 15.516 27.3177 14.692C27.055
+                                      13.872 26.1083 12.6786 24.8523 11.2666C24.1697 10.4613 23.1497 9.59464 22.839
+                                       9.16131C22.4057 8.60264 22.531 8.35598 22.839 7.85998C22.8403 7.86131 26.4017
+                                       2.84531 26.7723 1.13997Z"/>
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="icon vk-icon">
+                            <use xlink:href="#vk"></use>
+                        </svg>
                     </a>
-                    <a href="#">
-                        <img src="./assets/svg/icon-tg.svg" alt="Телеграмм">
+                    <a href="#tg">
+                        <svg style="display: none">
+                            <symbol id="tg" viewBox="0 0 28 24">
+                                <g>
+                                    <path d="M25.5531 0.956004L1.91313 10.072C0.299801 10.72 0.309134 11.62 1.61713
+                            12.0213L7.68647 13.9147L21.7291 5.05467C22.3931 4.65067 22.9998 4.868 22.5011
+                            5.31067L11.1238 15.5787H11.1211L11.1238 15.58L10.7051 21.836C11.3185 21.836
+                            11.5891 21.5547 11.9331 21.2227L14.8811 18.356L21.0131 22.8853C22.1438 23.508
+                            22.9558 23.188 23.2371 21.8387L27.2625 2.868C27.6745 1.216 26.6318 0.468004 25.5531 0.956004Z"/>
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg class="icon tg-icon">
+                            <use xlink:href="#tg"></use>
+                        </svg>
                     </a>
                 </div>
             </div>

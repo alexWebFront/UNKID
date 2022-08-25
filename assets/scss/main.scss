@@ -8,6 +8,8 @@
 //Компоненты
 @import "components/header";
 @import "components/footer";
+@import "components/buttons";
+@import "components/icons";
 
 //Страницы
 @import "pages/main-page";
@@ -16,7 +18,11 @@
 @import "pages/program";
 @import "pages/payment";
 
-.wrapper{
+body {
+  font-family: $font-montserrat-regular;
+}
+
+.wrapper {
   background-color: $color-background;
 }
 
