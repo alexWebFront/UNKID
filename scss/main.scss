@@ -1,0 +1,20 @@
+//Сброс
+@import "normalize";
+
+//Шрифты, переменные
+@import "variables";
+@import "fonts";
+
+.wrapper{
+  background-color: $color-background;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+
+//страницы
+@import "pages/main-page";
+
