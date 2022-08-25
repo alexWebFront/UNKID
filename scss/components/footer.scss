@@ -1,0 +1,117 @@
+.footer {
+  background-color: $color-violet-footer;
+  font-family: $font-montserrat;
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin-top: 77px;
+    margin-bottom: 104px;
+  }
+
+  .author {
+    letter-spacing: 0.02em;
+
+    p:first-child {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 19px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    p span {
+      color: $color-white;
+      border-bottom: 1px $color-white solid;
+    }
+
+    p:last-child {
+      color: $color-white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+
+  .policy {
+    margin-top: 95px;
+
+    .policy__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    a {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      border-bottom: 1px $color-white solid;
+      color: $color-white;
+    }
+  }
+
+  .menu {
+    margin-top: 95px;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      a {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  .contacts {
+    margin-bottom: 53px;
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: right;
+      letter-spacing: 0.02em;
+      color: $color-white;
+      font-weight: 700;
+    }
+
+    .phone {
+      margin: 40px 0 32px 0;
+    }
+
+    .email {
+      margin-bottom: 40px;
+    }
+
+    .phone a,
+    .email a {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: right;
+      letter-spacing: 0.02em;
+      color: $color-white;
+    }
+
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 37.5px;
+      align-items: center;
+      justify-content: right;
+    }
+  }
+}

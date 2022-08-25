@@ -2,8 +2,19 @@
 @import "normalize";
 
 //Шрифты, переменные
-@import "variables";
 @import "fonts";
+@import "variables";
+
+//Компоненты
+@import "components/header";
+@import "components/footer";
+
+//Страницы
+@import "pages/main-page";
+@import "pages/teachers";
+@import "pages/tariffs";
+@import "pages/program";
+@import "pages/payment";
 
 .wrapper{
   background-color: $color-background;
@@ -15,6 +26,5 @@
 }
 
 
-//страницы
-@import "pages/main-page";
+
 
