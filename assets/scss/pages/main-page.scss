@@ -1,2 +1,61 @@
+@import "../variables";
 
+.animals {
 
+  .animals__container {
+    display: flex;
+    align-items: center;
+    background: #FFF6F6;
+    margin-bottom: 86px;
+  }
+
+  .animals__left-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-left: 215px;
+
+    p {
+      font-family: $font-rubik-medium;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 157.5%;
+      letter-spacing: 0.02em;
+      color: $color-violet-footer;
+      max-width: 365px;
+    }
+
+    .animals__image-container {
+      width: 156px;
+      height: 93px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .animals__right-content {
+    position: relative;
+    width: 1103px;
+    height: 174px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .animals__right-content:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #FFF6F6 0%, rgba(254, 237, 236, 0.65125) 11.77%, rgba(254, 237, 236, 0.4) 100%);
+    top: 0;
+    right: 0;
+  }
+
+}

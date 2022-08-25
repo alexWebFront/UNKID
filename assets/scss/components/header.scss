@@ -14,6 +14,14 @@
       line-height: 122.2%;
       letter-spacing: 0.02em;
       color: $color-black;
+      padding: 10px 20px;
+      border: 1px solid transparent;
+    }
+
+    .menu__item a:hover {
+      color: $color-violet-hover;
+      border: 1px solid $color-violet-hover-border;
+      border-radius: 20px;
     }
   }
 

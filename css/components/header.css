@@ -76,6 +76,13 @@
   line-height: 122.2%;
   letter-spacing: 0.02em;
   color: #1F1F1F;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+}
+.header__container .menu__list .menu__item a:hover {
+  color: #D342F8;
+  border: 1px solid #D844FE;
+  border-radius: 20px;
 }
 .header__container .account {
   display: flex;
