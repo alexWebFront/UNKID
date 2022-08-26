@@ -1,5 +1,88 @@
 @import "../variables";
 
+.main {
+  position: relative;
+
+  h1 {
+    font-family: $font-nunito-black;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    max-width: 659px;
+  }
+
+  .main__container {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+
+    .main__image-container {
+      width: 726px;
+      height: 867px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+  .main__flex-container-first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 39px;
+    position: relative;
+
+    .main__image-container-online {
+      width: 304px;
+      height: 84px;
+      border-radius: 300px;
+      position: absolute;
+      top: 39px;
+      right: -30px;
+    }
+  }
+
+  .main__flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 82px;
+  }
+
+  .btn-circle {
+    width: 228px;
+    height: 228px;
+  }
+
+  .main__description {
+    max-width: 465px;
+  }
+
+  .left-arrow {
+    fill: #EEB1FE;
+    position: absolute;
+    top: 340px;
+    left: -20px;
+  }
+
+  .sun {
+    width: 289px;
+    height: 292px;
+    fill: #EEB1FE;
+    position: absolute;
+    top: 175px;
+    right: -145px;
+  }
+
+
+}
+
 .animals {
 
   .animals__container {

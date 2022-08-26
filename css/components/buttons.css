@@ -85,6 +85,15 @@
 .btn-circle {
   background: #B87DEA;
   border-radius: 1000px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=buttons.css.map */
