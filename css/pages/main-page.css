@@ -1,92 +1,84 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "Montserrat SemiBold";
-  src: url("../fonts/Montserrat-SemiBold.eot");
-  src: local("☺"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url("../fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Light";
-  src: url("../fonts/Montserrat-Light.eot");
-  src: local("☺"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Medium";
-  src: url("../fonts/Montserrat-Medium.eot");
-  src: local("☺"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Regular";
-  src: url("../fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito Black";
-  src: url("../fonts/Nunito-Black.eot");
-  src: local("☺"), url("../fonts/Nunito-Black.woff") format("woff"), url("../fonts/Nunito-Black.ttf") format("truetype"), url("../fonts/Nunito-Black.svg") format("svg");
+  font-family: "Nunito";
+  src: url("../../assets/fonts/Nunito-Black.woff2") format("woff2"), url("../../assets/fonts/Nunito-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Rubik Bold";
-  src: url("../fonts/Rubik-Bold.eot");
-  src: local("☺"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype"), url("../fonts/Rubik-Bold.svg") format("svg");
-  font-weight: 700;
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Rubik Medium";
-  src: url("../fonts/Rubik-Medium.eot");
-  src: local("☺"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype"), url("../fonts/Rubik-Medium.svg") format("svg");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Rubik Regular";
-  src: url("../fonts/Rubik-Regular.eot");
-  src: local("☺"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.svg") format("svg");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Light.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Bold.woff2") format("woff2"), url("../../assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Regular.woff2") format("woff2"), url("../../assets/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Medium.woff2") format("woff2"), url("../../assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 .main {
   position: relative;
+  z-index: 100;
 }
-.main h1 {
-  font-family: Nunito Black;
-  font-weight: 900;
-  font-size: 100px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: #1F1F1F;
-  max-width: 659px;
-}
-.main .main__container {
+.main .first-block-container {
   display: flex;
-  gap: 29px;
   align-items: center;
+  margin-bottom: 130px;
+  justify-content: space-between;
 }
 .main .main__container .main__image-container {
-  width: 726px;
-  height: 867px;
+  min-width: 726px;
+  min-height: 867px;
   position: relative;
-}
-.main .main__container .main__image-container img {
-  width: 100%;
-  height: 100%;
+  background-image: url("../../../assets/images/main-page-image.png");
+  background-position: 20px -7px;
+  background-repeat: no-repeat;
+  margin: 0 -10px 0 0;
 }
 .main .main__flex-container-first {
   display: flex;
@@ -96,25 +88,22 @@
   position: relative;
 }
 .main .main__flex-container-first .main__image-container-online {
-  width: 304px;
-  height: 84px;
-  border-radius: 300px;
   position: absolute;
-  top: 39px;
-  right: -30px;
+  top: 50px;
+  right: -150px;
+  width: 304px;
+}
+.main .main__flex-container-first .main__image-container-online img {
+  width: 100%;
+  height: 100%;
 }
 .main .main__flex-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 82px;
-}
-.main .btn-circle {
-  width: 228px;
-  height: 228px;
 }
 .main .main__description {
   max-width: 465px;
+  font-size: 20px;
 }
 .main .left-arrow {
   fill: #EEB1FE;
@@ -127,27 +116,232 @@
   height: 292px;
   fill: #EEB1FE;
   position: absolute;
-  top: 175px;
-  right: -145px;
+  top: 171px;
+  right: -166px;
+}
+.main .main__cards {
+  display: flex;
+  justify-content: center;
+  gap: 116px;
+  margin-bottom: 210px;
+}
+.main .main__cards .main__card {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(72, 34, 90, 0.15);
+  border-radius: 4px;
+  width: 365px;
+  height: 382px;
+  padding: 82px 31px 0 31px;
+}
+.main .main__cards .main__card .heading-bold {
+  margin: 0 0 24px 0;
+}
+.main .main__cards .main__card .main__card-circle {
+  position: absolute;
+  top: -110px;
+  left: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__cards .main__card:nth-child(1) .main__card-circle {
+  width: 138px;
+  height: 168px;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/images/circle-top-right.png");
+}
+.main .main__cards .main__card:nth-child(2) .main__card-circle {
+  width: 202px;
+  height: 138px;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/images/circle-center-left.png");
+  top: -92px;
+  left: 83px;
+}
+.main .main__cards .main__card:nth-child(3) .main__card-circle {
+  width: 138px;
+  height: 168px;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/images/circle-top-left.png");
+}
+.main .main__cards .main__card:nth-child(2) {
+  margin: -52px 0 0 0;
+}
+.main .spiral {
+  position: absolute;
+  top: 1094px;
+  left: -20px;
+  z-index: -2;
+}
+.main .spiral img {
+  width: 100%;
+  height: 100%;
+}
+.main .violet-block {
+  display: flex;
+  justify-content: space-between;
+  background: #B87DEA;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  padding: 0 82px 90px 162px;
+  margin: 0 0 214px 0;
+}
+.main .violet-block .violet-block__container {
+  max-width: 724px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 72px;
+}
+.main .violet-block .violet-block__container p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.main .violet-block .violet-block__container .violet-block__item {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  background: url("../../../assets/svg/icon-check.svg") left no-repeat;
+  padding: 0 0 0 40px;
+}
+.main .violet-block .violet-block__container .violet-block__item:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+.main .violet-block .violet-block__image {
+  width: 510px;
+  height: 681px;
+  margin: -22px 0 0 0;
+}
+.main .violet-block .violet-block__image img {
+  width: 100%;
+  height: 100%;
+}
+.main .annotation {
+  display: flex;
+  height: 660px;
+  margin: 0 0 182px 0;
+  gap: 72px;
+}
+.main .annotation .annotation__image {
+  position: relative;
+}
+.main .annotation .annotation__heading {
+  margin-bottom: 40px;
+}
+.main .annotation .annotation-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .annotation .annotation__left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 86px;
+  max-width: 710px;
+}
+.main .annotation .annotation__left .annotation__left-container {
+  display: flex;
+  gap: 7px;
+}
+.main .annotation .annotation__left .description {
+  padding: 0 0 0 54px;
+}
+.main .annotation .annotation__right {
+  display: flex;
+  flex-direction: column;
+  gap: 86px;
+  justify-content: flex-end;
+  max-width: 686px;
+}
+.main .annotation .annotation__right .annotation-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .annotation .annotation__right .description {
+  padding: 0 54px 0 0;
+}
+.main .annotation .annotation__right .annotation__right-container {
+  display: flex;
+}
+.main .annotation .annotation__right .annotation__heading {
+  transform: rotate(3.8deg);
+}
+
+.demo .demo__container {
+  margin: 0 0 80px 0;
+  padding: 0 70px 0 106px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+  gap: 100px;
+  width: 1744px;
+}
+.demo .demo__container .page-heading {
+  font-size: 60px;
+  margin: 0 0 20px 0;
+  max-width: 560px;
+}
+.demo .demo__container .demo__image {
+  width: 646px;
+  height: 788px;
+}
+.demo .demo__container .demo__image img {
+  width: 100%;
+  height: 100%;
+}
+.demo .demo__container .demo__content-container {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.demo .demo__container .demo__list .demo__item {
+  padding: 10px 20px;
+  gap: 16px;
+  background: rgba(238, 177, 254, 0.5);
+  border-radius: 100px;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+}
+.demo .demo__container .demo__list .demo__item:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+.demo .flag {
+  position: absolute;
+  width: 414px;
+  height: 356px;
+  top: 4px;
+  right: -70px;
 }
 
 .animals .animals__container {
   display: flex;
   align-items: center;
   background: #FFF6F6;
-  margin-bottom: 86px;
+  margin: 0 0 86px 0;
 }
 .animals .animals__left-content {
   display: flex;
   align-items: center;
   gap: 35px;
-  padding-left: 215px;
+  padding: 0 0 0 216px;
 }
 .animals .animals__left-content p {
-  font-family: Rubik Medium;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 22px;
-  line-height: 157.5%;
+  line-height: 158%;
   letter-spacing: 0.02em;
   color: #48225A;
   max-width: 365px;

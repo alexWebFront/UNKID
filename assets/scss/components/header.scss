@@ -11,18 +11,24 @@
 
     .menu__item a {
       font-size: 18px;
-      line-height: 122.2%;
+      line-height: 122%;
       letter-spacing: 0.02em;
       color: $color-black;
+      border-radius: 20px;
       padding: 10px 20px;
       border: 1px solid transparent;
+      transition: all 0.3s ease;
     }
 
     .menu__item a:hover {
       color: $color-violet-hover;
-      border: 1px solid $color-violet-hover-border;
-      border-radius: 20px;
+
     }
+    .menu__item a:focus{
+      color: $color-violet-hover;
+      border: 1px solid $color-violet-hover-border;
+    }
+
   }
 
   .account {
@@ -30,3 +36,4 @@
     gap: 19px;
   }
 }
+

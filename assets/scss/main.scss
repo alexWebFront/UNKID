@@ -1,9 +1,9 @@
-//Сброс
-@import "normalize";
-
 //Шрифты, переменные
-@import "fonts";
-@import "variables";
+@import "./fonts";
+@import "./variables";
+
+//Сброс
+@import "./normalize";
 
 //Компоненты
 @import "components/header";
@@ -19,7 +19,7 @@
 @import "pages/payment";
 
 body {
-  font-family: $font-montserrat-regular;
+  font-family: $font-montserrat;
 }
 
 .wrapper {
@@ -31,12 +31,45 @@ body {
   margin: 0 auto;
 }
 
-.description{
-  font-size: 20px;
+.description {
+  font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.02em;
   color: $color-gray-text;
 }
 
+.heading-bold {
+  font-family: $font-nunito;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $color-black;
+}
+
+.page-heading {
+  font-family: $font-nunito;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: $color-black;
+  max-width: 659px;
+}
+
+.annotation__heading {
+  background: $color-violet-heading;
+  border-radius: 300px;
+  transform: rotate(-3.8deg);
+  display: inline-block;
+  font-family: $font-nunito;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: $color-white;
+  padding: 12px 32px;
+}
 
 
