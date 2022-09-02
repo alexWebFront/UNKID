@@ -10,6 +10,7 @@
 @import "components/footer";
 @import "components/buttons";
 @import "components/icons";
+@import "components/card";
 
 //Страницы
 @import "pages/main-page";
@@ -48,7 +49,7 @@ body {
   color: $color-black;
 }
 
-.page-heading {
+.title {
   font-family: $font-nunito;
   font-weight: 900;
   font-size: 100px;

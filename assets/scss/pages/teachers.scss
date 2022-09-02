@@ -1,1 +1,110 @@
 @import "../variables";
+
+.main {
+  position: relative;
+  .teachers {
+    padding: 122px 0 170px 0;
+
+
+    .title {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 0 110px 0;
+    }
+
+    .teachers__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .teachers__card {
+        width: 493px;
+        height: 229px;
+        display: flex;
+        align-items: center;
+        margin: 0 0 20px 0;
+        .card__image {
+          transition: all 0.3s ease;
+        }
+
+        .card__name {
+          font-family: $font-nunito;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 100%;
+          letter-spacing: 0.15px;
+          color: $color-black-card-name;
+          margin: 0 0 24px 0;
+          transition: all 0.3s ease;
+        }
+
+        .card__info {
+          margin: 0 0 22px 0;
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            line-height: 122%;
+            color: $color-gray-card;
+            margin: 0 0 4px 0;
+            transition: all 0.3s ease;
+          }
+
+          span {
+            line-height: 122%;
+            color: $color-black-card;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .card__price {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 125%;
+          letter-spacing: 0.25px;
+          color: $color-black-card;
+          transition: all 0.3s ease;
+        }
+      }
+
+      .teachers__card:hover {
+        background: $color-violet-light;
+        transition: all 0.3s ease;
+
+        .card__image {
+          filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.15));
+          border-radius: 8px;
+          transform: rotate(9.25deg);
+        }
+
+        .card__name {
+          color: $color-white;
+        }
+
+        .card__info p, span {
+          color: $color-white;
+        }
+
+        .card__price {
+          color: $color-white;
+        }
+      }
+
+      .card__content {
+        padding: 48px 8px 48px 32px;
+      }
+    }
+
+
+  }
+  .vzhux-icon {
+    position: absolute;
+    bottom: 2px;
+    left: -90px;
+    width: 768px;
+    height: 776px;
+    z-index: -10;
+  }
+}

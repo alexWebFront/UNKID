@@ -711,6 +711,75 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+.card {
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(72, 34, 90, 0.15);
+  border-radius: 4px;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../../assets/fonts/Nunito-Black.woff2") format("woff2"), url("../../assets/fonts/Nunito-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Light.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Bold.woff2") format("woff2"), url("../../assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Regular.woff2") format("woff2"), url("../../assets/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Medium.woff2") format("woff2"), url("../../assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .main {
   position: relative;
   z-index: 100;
@@ -936,7 +1005,7 @@ h6 {
   gap: 100px;
   width: 1744px;
 }
-.demo .demo__container .page-heading {
+.demo .demo__container .title {
   font-size: 60px;
   margin: 0 0 20px 0;
   max-width: 560px;
@@ -1087,6 +1156,98 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+.main {
+  position: relative;
+}
+.main .teachers {
+  padding: 122px 0 170px 0;
+}
+.main .teachers .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 0 110px 0;
+}
+.main .teachers .teachers__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main .teachers .teachers__cards .teachers__card {
+  width: 493px;
+  height: 229px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+.main .teachers .teachers__cards .teachers__card .card__image {
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card .card__name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.15px;
+  color: #222222;
+  margin: 0 0 24px 0;
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card .card__info {
+  margin: 0 0 22px 0;
+}
+.main .teachers .teachers__cards .teachers__card .card__info p {
+  display: flex;
+  justify-content: space-between;
+  line-height: 122%;
+  color: #9C9C9C;
+  margin: 0 0 4px 0;
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card .card__info span {
+  line-height: 122%;
+  color: #4C4C4C;
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card .card__price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.25px;
+  color: #4C4C4C;
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card:hover {
+  background: #B87DEA;
+  transition: all 0.3s ease;
+}
+.main .teachers .teachers__cards .teachers__card:hover .card__image {
+  filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.15));
+  border-radius: 8px;
+  transform: rotate(9.25deg);
+}
+.main .teachers .teachers__cards .teachers__card:hover .card__name {
+  color: #FFFFFF;
+}
+.main .teachers .teachers__cards .teachers__card:hover .card__info p, .main .teachers .teachers__cards .teachers__card:hover span {
+  color: #FFFFFF;
+}
+.main .teachers .teachers__cards .teachers__card:hover .card__price {
+  color: #FFFFFF;
+}
+.main .teachers .teachers__cards .card__content {
+  padding: 48px 8px 48px 32px;
+}
+.main .vzhux-icon {
+  position: absolute;
+  bottom: 2px;
+  left: -90px;
+  width: 768px;
+  height: 776px;
+  z-index: -10;
+}
+
 @font-face {
   font-family: "Nunito";
   src: url("../../assets/fonts/Nunito-Black.woff2") format("woff2"), url("../../assets/fonts/Nunito-Black.woff") format("woff");
@@ -1306,7 +1467,7 @@ body {
   color: #1F1F1F;
 }
 
-.page-heading {
+.title {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 100px;
