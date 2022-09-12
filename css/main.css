@@ -1160,31 +1160,32 @@ h6 {
   position: relative;
 }
 .main .teachers {
-  padding: 122px 0 170px 0;
+  padding: 110px 0 170px 0;
 }
 .main .teachers .title {
   max-width: 100%;
   text-align: center;
   margin: 0 0 110px 0;
 }
-.main .teachers .teachers__cards {
+.main .teachers__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.main .teachers .teachers__cards .teachers__card {
-  width: 493px;
+.main .teachers__cards .teachers__card {
+  max-width: 493px;
   height: 229px;
   display: flex;
   align-items: center;
   margin: 0 0 20px 0;
+  cursor: pointer;
 }
-.main .teachers .teachers__cards .teachers__card .card__image {
+.main .teachers__cards .teachers__card .card__image {
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card .card__name {
+.main .teachers__cards .teachers__card .card__name {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -1194,10 +1195,10 @@ h6 {
   margin: 0 0 24px 0;
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card .card__info {
+.main .teachers__cards .teachers__card .card__info {
   margin: 0 0 22px 0;
 }
-.main .teachers .teachers__cards .teachers__card .card__info p {
+.main .teachers__cards .teachers__card .card__info p {
   display: flex;
   justify-content: space-between;
   line-height: 122%;
@@ -1205,12 +1206,12 @@ h6 {
   margin: 0 0 4px 0;
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card .card__info span {
+.main .teachers__cards .teachers__card .card__info span {
   line-height: 122%;
   color: #4C4C4C;
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card .card__price {
+.main .teachers__cards .teachers__card .card__price {
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
@@ -1218,25 +1219,25 @@ h6 {
   color: #4C4C4C;
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card:hover {
+.main .teachers__cards .teachers__card:hover {
   background: #B87DEA;
   transition: all 0.3s ease;
 }
-.main .teachers .teachers__cards .teachers__card:hover .card__image {
+.main .teachers__cards .teachers__card:hover .card__image {
   filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.15));
   border-radius: 8px;
   transform: rotate(9.25deg);
 }
-.main .teachers .teachers__cards .teachers__card:hover .card__name {
+.main .teachers__cards .teachers__card:hover .card__name {
   color: #FFFFFF;
 }
-.main .teachers .teachers__cards .teachers__card:hover .card__info p, .main .teachers .teachers__cards .teachers__card:hover span {
+.main .teachers__cards .teachers__card:hover .card__info p, .main .teachers__cards .teachers__card:hover span {
   color: #FFFFFF;
 }
-.main .teachers .teachers__cards .teachers__card:hover .card__price {
+.main .teachers__cards .teachers__card:hover .card__price {
   color: #FFFFFF;
 }
-.main .teachers .teachers__cards .card__content {
+.main .teachers__cards .card__content {
   padding: 48px 8px 48px 32px;
 }
 .main .vzhux-icon {
@@ -1311,6 +1312,102 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+.main .tariffs {
+  padding: 110px 0 170px 0;
+}
+.main .tariffs .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 0 110px 0;
+}
+.main .tariffs__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .tariffs__info-item p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  margin: 0 0 12px 0;
+}
+.main .tariffs__info-item:not(:last-child) {
+  margin: 0 0 46px 0;
+}
+.main .tariffs__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .tariffs__btn .btn {
+  padding: 14px 31px;
+  border-radius: 100px;
+}
+.main .tariffs__btn .btn:focus {
+  background: #E6A6F6;
+  color: #FFFFFF;
+  border: 1px solid #E6A6F6;
+}
+.main .tariffs__pay {
+  padding: 78px 148px 184px 148px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 40px rgba(48, 48, 48, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+.main .tariffs__pay .tariffs__name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.main .tariffs__pay .tariffs__cost {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #B87DEA;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.main .tariffs__pay .tariffs__result {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.main .tariffs__pay .tariffs__result .result__item {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #727272;
+  list-style-type: disc;
+}
+.main .tariffs__pay .btn-circle {
+  position: absolute;
+  bottom: -88px;
+  left: 231px;
+}
+.main .tariffs__pay .union-icon {
+  position: absolute;
+  top: -111px;
+  right: -98px;
+  width: 248px;
+  height: 248px;
+  z-index: -2;
+}
+
 @font-face {
   font-family: "Nunito";
   src: url("../../assets/fonts/Nunito-Black.woff2") format("woff2"), url("../../assets/fonts/Nunito-Black.woff") format("woff");
@@ -1437,6 +1534,132 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+.main .payment {
+  padding: 110px 0 170px 0;
+  position: relative;
+}
+.main .payment .payment__container {
+  max-width: 1006px;
+}
+.main .payment .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 0 110px 0;
+}
+.main .payment .payment__title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 126%;
+  color: #111729;
+  margin: 0 0 32px 0;
+}
+.main .payment .tariff {
+  margin: 0 0 68px 0;
+}
+.main .payment .tariff .tariffs__pay {
+  padding: 56px 84px 42px 84px;
+  max-width: 622px;
+}
+.main .payment .pay-method {
+  margin: 0 0 68px 0;
+}
+.main .payment .pay-method .payment__list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .payment .pay-method .payment__list .payment__item {
+  width: 237px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main .payment .pay-method .payment__list .payment__item:focus {
+  background: rgba(238, 177, 254, 0.5);
+  border: 3px solid #B87DEA;
+}
+.main .payment .promo-code {
+  margin: 0 0 126px 0;
+}
+.main .payment .promo-code .promo-code__content {
+  display: flex;
+  align-items: center;
+}
+.main .payment .promo-code .input-promo {
+  width: 398px;
+  height: 76px;
+  background: #F8F8F8;
+  border: 1px solid #BABABA;
+  border-radius: 30px;
+}
+.main .payment .promo-code .btn-promo {
+  width: 168px;
+  height: 76px;
+  background: #D944FF;
+  border-radius: 40px;
+  margin: 0 0 0 -74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .payment .line {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 0 48px 0;
+}
+.main .payment .total {
+  max-width: 377px;
+}
+.main .payment .total .btn {
+  width: 100%;
+  height: 76px;
+  background: #B87DEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .payment .total .payment__title {
+  margin: 0 0 74px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .payment .total .payment__title span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 138%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #B87DEA;
+}
+.main .payment .total .sale {
+  font-size: 24px;
+  line-height: 126%;
+  color: #111729;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 38px 0;
+}
+.main .payment .total .sale span {
+  margin: 0 38px 0 0;
+}
+.main .payment .flag {
+  width: 532px;
+  height: 460px;
+  position: absolute;
+  top: 522px;
+  right: -57px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -1489,6 +1712,17 @@ body {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   padding: 12px 32px;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 360px) {
+  .title {
+    font-size: 32px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

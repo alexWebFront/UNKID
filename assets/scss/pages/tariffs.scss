@@ -1,1 +1,116 @@
 @import "../variables";
+
+
+.main {
+  .tariffs {
+    padding: 110px 0 170px 0;
+
+    .title {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 0 110px 0;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__info-item {
+      p {
+        font-family: $font-nunito;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 136%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color-black;
+        margin: 0 0 12px 0;
+      }
+    }
+
+    &__info-item:not(:last-child) {
+      margin: 0 0 46px 0;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .btn {
+        padding: 14px 31px;
+        border-radius: 100px;
+      }
+
+      .btn:focus {
+        background: $color-violet-tariffs;
+        color: $color-white;
+        border: 1px solid $color-violet-tariffs;
+      }
+
+    }
+
+    &__pay {
+      padding: 78px 148px 184px 148px;
+      background: $color-white;
+      box-shadow: 0 4px 40px rgba(48, 48, 48, 0.1);
+      border-radius: 20px;
+      position: relative;
+
+      .tariffs__name {
+        font-family: $font-nunito;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 136%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color-black;
+        text-align: center;
+        margin: 0 0 40px 0;
+      }
+
+      .tariffs__cost {
+        font-family: $font-nunito;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 136%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color-violet-light;
+        text-align: center;
+        margin: 0 0 40px 0;
+      }
+
+      .tariffs__result {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+
+        .result__item {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: 0.03em;
+          color: $color-gray-text;
+          list-style-type: disc;
+        }
+      }
+
+      .btn-circle {
+        position: absolute;
+        bottom: -88px;
+        left: 231px;
+      }
+      .union-icon{
+        position: absolute;
+        top: -111px;
+        right: -98px;
+        width: 248px;
+        height: 248px;
+        z-index: -2;
+      }
+    }
+  }
+}

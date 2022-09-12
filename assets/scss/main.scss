@@ -74,3 +74,14 @@ body {
 }
 
 
+@media (max-width: 1000px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 32px;
+  }
+}

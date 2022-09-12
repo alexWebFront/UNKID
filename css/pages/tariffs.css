@@ -61,5 +61,100 @@
   font-style: normal;
   font-display: swap;
 }
+.main .tariffs {
+  padding: 110px 0 170px 0;
+}
+.main .tariffs .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 0 110px 0;
+}
+.main .tariffs__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .tariffs__info-item p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  margin: 0 0 12px 0;
+}
+.main .tariffs__info-item:not(:last-child) {
+  margin: 0 0 46px 0;
+}
+.main .tariffs__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .tariffs__btn .btn {
+  padding: 14px 31px;
+  border-radius: 100px;
+}
+.main .tariffs__btn .btn:focus {
+  background: #E6A6F6;
+  color: #FFFFFF;
+  border: 1px solid #E6A6F6;
+}
+.main .tariffs__pay {
+  padding: 78px 148px 184px 148px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 40px rgba(48, 48, 48, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+.main .tariffs__pay .tariffs__name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.main .tariffs__pay .tariffs__cost {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #B87DEA;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.main .tariffs__pay .tariffs__result {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.main .tariffs__pay .tariffs__result .result__item {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #727272;
+  list-style-type: disc;
+}
+.main .tariffs__pay .btn-circle {
+  position: absolute;
+  bottom: -88px;
+  left: 231px;
+}
+.main .tariffs__pay .union-icon {
+  position: absolute;
+  top: -111px;
+  right: -98px;
+  width: 248px;
+  height: 248px;
+  z-index: -2;
+}
 
 /*# sourceMappingURL=tariffs.css.map */

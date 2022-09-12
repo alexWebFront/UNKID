@@ -2,9 +2,9 @@
 
 .main {
   position: relative;
-  .teachers {
-    padding: 122px 0 170px 0;
 
+  .teachers {
+    padding: 110px 0 170px 0;
 
     .title {
       max-width: 100%;
@@ -12,7 +12,7 @@
       margin: 0 0 110px 0;
     }
 
-    .teachers__cards {
+    &__cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -20,11 +20,13 @@
       gap: 20px;
 
       .teachers__card {
-        width: 493px;
+        max-width: 493px;
         height: 229px;
         display: flex;
         align-items: center;
         margin: 0 0 20px 0;
+        cursor: pointer;
+
         .card__image {
           transition: all 0.3s ease;
         }
@@ -99,6 +101,7 @@
 
 
   }
+
   .vzhux-icon {
     position: absolute;
     bottom: 2px;
