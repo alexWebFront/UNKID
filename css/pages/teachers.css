@@ -79,18 +79,37 @@
   align-items: center;
   gap: 20px;
 }
-.main .teachers__cards .teachers__card {
-  max-width: 493px;
+.main .teachers__card {
+  width: 493px;
   height: 229px;
   display: flex;
   align-items: center;
   margin: 0 0 20px 0;
   cursor: pointer;
 }
-.main .teachers__cards .teachers__card .card__image {
+.main .teachers__card:hover {
+  background: #B87DEA;
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card .card__name {
+.main .teachers__card:hover .card__image {
+  filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.15));
+  border-radius: 8px;
+  transform: rotate(9.25deg);
+}
+.main .teachers__card:hover .card__name {
+  color: #FFFFFF;
+}
+.main .teachers__card:hover .card__info p,
+.main .teachers__card:hover span {
+  color: #FFFFFF;
+}
+.main .teachers__card:hover .card__price {
+  color: #FFFFFF;
+}
+.main .teachers .card__content {
+  padding: 48px 8px 48px 32px;
+}
+.main .teachers .card__name {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -100,10 +119,10 @@
   margin: 0 0 24px 0;
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card .card__info {
+.main .teachers .card__info {
   margin: 0 0 22px 0;
 }
-.main .teachers__cards .teachers__card .card__info p {
+.main .teachers .card__info p {
   display: flex;
   justify-content: space-between;
   line-height: 122%;
@@ -111,12 +130,12 @@
   margin: 0 0 4px 0;
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card .card__info span {
+.main .teachers .card__info span {
   line-height: 122%;
   color: #4C4C4C;
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card .card__price {
+.main .teachers .card__price {
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
@@ -124,28 +143,14 @@
   color: #4C4C4C;
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card:hover {
-  background: #B87DEA;
+.main .teachers .card__image {
   transition: all 0.3s ease;
 }
-.main .teachers__cards .teachers__card:hover .card__image {
-  filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.15));
-  border-radius: 8px;
-  transform: rotate(9.25deg);
+.main .teachers .card__image img {
+  width: 100%;
+  height: 100%;
 }
-.main .teachers__cards .teachers__card:hover .card__name {
-  color: #FFFFFF;
-}
-.main .teachers__cards .teachers__card:hover .card__info p, .main .teachers__cards .teachers__card:hover span {
-  color: #FFFFFF;
-}
-.main .teachers__cards .teachers__card:hover .card__price {
-  color: #FFFFFF;
-}
-.main .teachers__cards .card__content {
-  padding: 48px 8px 48px 32px;
-}
-.main .vzhux-icon {
+.main .teachers .vzhux-icon {
   position: absolute;
   bottom: 2px;
   left: -90px;

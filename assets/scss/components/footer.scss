@@ -4,13 +4,13 @@
   background-color: $color-violet-footer;
   padding: 40px 0 52px 0;
 
-  .footer__container {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .footer__logo {
+  &__logo {
     margin: 0 0 90px 0;
   }
 
@@ -37,8 +37,7 @@
   }
 
   .policy {
-
-    .policy__list {
+    &__list {
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -55,23 +54,24 @@
     }
   }
 
-  .menu__list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0 0 36px 0;
+  .menu {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 0 0 36px 0;
 
-    a {
-      color: $color-white;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 122%;
-      letter-spacing: 0.02em;
+      a {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 122%;
+        letter-spacing: 0.02em;
+      }
     }
   }
 
   .contacts {
-
     p {
       font-size: 18px;
       line-height: 166%;

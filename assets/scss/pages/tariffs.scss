@@ -1,6 +1,5 @@
 @import "../variables";
 
-
 .main {
   .tariffs {
     padding: 110px 0 170px 0;
@@ -49,7 +48,6 @@
         color: $color-white;
         border: 1px solid $color-violet-tariffs;
       }
-
     }
 
     &__pay {
@@ -103,7 +101,7 @@
         bottom: -88px;
         left: 231px;
       }
-      .union-icon{
+      .union-icon {
         position: absolute;
         top: -111px;
         right: -98px;

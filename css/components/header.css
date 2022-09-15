@@ -66,11 +66,18 @@
   align-items: center;
   justify-content: space-between;
 }
-.header__container .menu__list {
+.header .menu__list {
   display: flex;
   gap: 90px;
 }
-.header__container .menu__list .menu__item a {
+.header .menu__item a:hover {
+  color: #D342F8;
+}
+.header .menu__item a:focus {
+  color: #D342F8;
+  border: 1px solid #D844FE;
+}
+.header .menu__item a {
   font-size: 18px;
   line-height: 122%;
   letter-spacing: 0.02em;
@@ -80,14 +87,8 @@
   border: 1px solid transparent;
   transition: all 0.3s ease;
 }
-.header__container .menu__list .menu__item a:hover {
-  color: #D342F8;
-}
-.header__container .menu__list .menu__item a:focus {
-  color: #D342F8;
-  border: 1px solid #D844FE;
-}
-.header__container .account {
+
+.account {
   display: flex;
   gap: 19px;
 }

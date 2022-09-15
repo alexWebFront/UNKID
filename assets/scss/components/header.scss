@@ -1,15 +1,25 @@
 @import "../variables";
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .menu__list {
+.header {
+  &__container {
     display: flex;
-    gap: 90px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    &__list {
+      display: flex;
+      gap: 90px;
+    }
 
-    .menu__item a {
+    &__item a:hover {
+      color: $color-violet-hover;
+    }
+    &__item a:focus {
+      color: $color-violet-hover;
+      border: 1px solid $color-violet-hover-border;
+    }
+    &__item a {
       font-size: 18px;
       line-height: 122%;
       letter-spacing: 0.02em;
@@ -19,21 +29,10 @@
       border: 1px solid transparent;
       transition: all 0.3s ease;
     }
-
-    .menu__item a:hover {
-      color: $color-violet-hover;
-
-    }
-    .menu__item a:focus{
-      color: $color-violet-hover;
-      border: 1px solid $color-violet-hover-border;
-    }
-
-  }
-
-  .account {
-    display: flex;
-    gap: 19px;
   }
 }
 
+.account {
+  display: flex;
+  gap: 19px;
+}

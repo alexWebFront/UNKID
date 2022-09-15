@@ -65,15 +65,10 @@
   padding: 110px 0 170px 0;
   position: relative;
 }
-.main .payment .payment__container {
+.main .payment__container {
   max-width: 1006px;
 }
-.main .payment .title {
-  max-width: 100%;
-  text-align: center;
-  margin: 0 0 110px 0;
-}
-.main .payment .payment__title {
+.main .payment__title {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -81,23 +76,28 @@
   color: #111729;
   margin: 0 0 32px 0;
 }
-.main .payment .tariff {
+.main .payment .tariffs {
   margin: 0 0 68px 0;
 }
-.main .payment .tariff .tariffs__pay {
+.main .payment .tariffs__pay {
   padding: 56px 84px 42px 84px;
   max-width: 622px;
 }
-.main .payment .pay-method {
+.main .payment .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 0 110px 0;
+}
+.main .pay-method {
   margin: 0 0 68px 0;
 }
-.main .payment .pay-method .payment__list {
+.main .pay-method__list {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
-.main .payment .pay-method .payment__list .payment__item {
+.main .pay-method__item {
   width: 237px;
   height: 100px;
   padding: 10px;
@@ -108,25 +108,25 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.main .payment .pay-method .payment__list .payment__item:focus {
+.main .pay-method__item:focus {
   background: rgba(238, 177, 254, 0.5);
   border: 3px solid #B87DEA;
 }
-.main .payment .promo-code {
+.main .promo-code {
   margin: 0 0 126px 0;
 }
-.main .payment .promo-code .promo-code__content {
+.main .promo-code__content {
   display: flex;
   align-items: center;
 }
-.main .payment .promo-code .input-promo {
+.main .promo-code .input-promo {
   width: 398px;
   height: 76px;
-  background: #F8F8F8;
-  border: 1px solid #BABABA;
+  background: #f8f8f8;
+  border: 1px solid #bababa;
   border-radius: 30px;
 }
-.main .payment .promo-code .btn-promo {
+.main .promo-code .btn-promo {
   width: 168px;
   height: 76px;
   background: #D944FF;
@@ -136,29 +136,21 @@
   align-items: center;
   justify-content: center;
 }
-.main .payment .line {
+.main .line {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   margin: 0 0 48px 0;
 }
-.main .payment .total {
+.main .total {
   max-width: 377px;
 }
-.main .payment .total .btn {
-  width: 100%;
-  height: 76px;
-  background: #B87DEA;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main .payment .total .payment__title {
+.main .total__title {
   margin: 0 0 74px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .payment .total .payment__title span {
+.main .total__title span {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 32px;
@@ -167,7 +159,15 @@
   text-transform: uppercase;
   color: #B87DEA;
 }
-.main .payment .total .sale {
+.main .total .btn {
+  width: 100%;
+  height: 76px;
+  background: #B87DEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .total .sale {
   font-size: 24px;
   line-height: 126%;
   color: #111729;
@@ -176,10 +176,10 @@
   justify-content: space-between;
   margin: 0 0 38px 0;
 }
-.main .payment .total .sale span {
+.main .total .sale span {
   margin: 0 38px 0 0;
 }
-.main .payment .flag {
+.main .flag {
   width: 532px;
   height: 460px;
   position: absolute;

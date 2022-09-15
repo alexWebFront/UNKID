@@ -1,140 +1,144 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-<div class="wrapper">
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__logo">
-                <img src="./assets/svg/header-logo.svg" alt="Логотип">
-            </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="./teachers.html">Преподаватели</a></li>
-                    <li class="menu__item"><a href="./tariffs.html">Тарифы</a></li>
-                    <li class="menu__item"><a href="#">Программа курса</a></li>
-                    <li class="menu__item"><a href="#">Новости</a></li>
-                </ul>
-            </nav>
-            <div class="account">
-                <div class="btn btn-primary">Регистрация</div>
-                <div class="btn btn-outline">Войти</div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main__container container">
 
-            <section class="payment">
-                <h1 class="title">Оплата</h1>
-                <div class="payment__container">
-                    <div class="tariff">
-                        <p class="payment__title">Выбранный тариф</p>
-                        <div class="tariffs__pay">
-                            <p class="tariffs__name">Премиум 2</p>
-                            <ul class="tariffs__result result">
-                                <li class="result__item">Стандарт</li>
-                                <li class="result__item">25 минут</li>
-                                <li class="result__item">8 занятий</li>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="./index.html">
+                        <img src="./assets/svg/header-logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="./teachers.html">Преподаватели</a></li>
+                        <li class="menu__item"><a href="./tariffs.html">Тарифы</a></li>
+                        <li class="menu__item"><a href="#">Программа курса</a></li>
+                        <li class="menu__item"><a href="#">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="account">
+                    <div class="btn btn-primary">Регистрация</div>
+                    <div class="btn btn-outline">Войти</div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container container">
+                <section class="payment">
+                    <h1 class="title">Оплата</h1>
+                    <div class="payment__container">
+                        <div class="tariffs">
+                            <p class="payment__title">Выбранный тариф</p>
+                            <div class="tariffs__pay">
+                                <p class="tariffs__name">Премиум 2</p>
+                                <ul class="tariffs__result result">
+                                    <li class="result__item">Стандарт</li>
+                                    <li class="result__item">25 минут</li>
+                                    <li class="result__item">8 занятий</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pay-method">
+                            <p class="payment__title">Способ оплаты</p>
+                            <ul class="pay-method__list">
+                                <li tabindex="0" class="pay-method__item">
+                                    <img src="./assets/images/masterCard.png" alt="Мастер кард">
+                                </li>
+                                <li tabindex="0" class="pay-method__item">
+                                    <img src="./assets/images/visa.png" alt="Виза">
+                                </li>
+                                <li tabindex="0" class="pay-method__item">
+                                    <img src="./assets/images/unionPay.png" alt="Юнион">
+                                </li>
+                                <li tabindex="0" class="pay-method__item">
+                                    <img src="./assets/images/mir.png" alt="Мир">
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="pay-method">
-                        <p class="payment__title">Способ оплаты</p>
-                        <ul class="payment__list">
-                            <li tabindex="0" class="payment__item">
-                                <img src="./assets/images/masterCard.png" alt="Мастер кард">
-                            </li>
-                            <li tabindex="0" class="payment__item">
-                                <img src="./assets/images/visa.png" alt="Виза">
-                            </li>
-                            <li tabindex="0" class="payment__item">
-                                <img src="./assets/images/unionPay.png" alt="Юнион">
-                            </li>
-                            <li tabindex="0" class="payment__item">
-                                <img src="./assets/images/mir.png" alt="Мир">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="promo-code">
-                        <p class="payment__title">Промокод</p>
-                        <div class="promo-code__content">
-                            <input type="text" class="input input-promo">
-                            <div class="btn btn-primary btn-promo">Применить</div>
+                        <div class="promo-code">
+                            <p class="payment__title">Промокод</p>
+                            <div class="promo-code__content">
+                                <input type="text" class="input input-promo">
+                                <div class="btn btn-primary btn-promo">Применить</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="total">
-                        <p class="sale">Скидка:<span>1000 ₽</span></p>
-                        <p class="payment__title">К оплате:<span>5 999 ₽</span></p>
-                        <div class="btn btn-primary">Оплатить</div>
-                    </div>
-                    <svg class="flag">
-                        <use xlink:href="./assets/scss/sprites.svg#flag"></use>
-                    </svg>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class=" footer__container container">
-            <div class="footer__info">
-                <div class="footer__logo">
-                    <img src="./assets/svg/footer-logo.svg" alt="Логотип">
-                </div>
-                <div class="author">
-                    <p>Автор графики:&nbsp;&nbsp;<span>Streamline</span></p>
-                    <p>&#169;Uni-kid.ru</p>
-                </div>
-            </div>
-            <div class="policy">
-                <ul class="policy__list">
-                    <li class="policy__item"><a href="#">Пользовательское соглашение</a></li>
-                    <li class="policy__item"><a href="#">Политика конфиденциальности</a></li>
-                    <li class="policy__item"><a href="#">Политика использования файлов cookie</a></li>
-                </ul>
-            </div>
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#">Преподаватели</a></li>
-                    <li class="menu__item"><a href="#">Тарифы</a></li>
-                    <li class="menu__item"><a href="#">Программа курса</a></li>
-                    <li class="menu__item"><a href="#">Новости</a></li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <div class="phone">
-                    <p>Телефон</p>
-                    <a href="tel:+7 (944) 323-23-11">+7 (944) 323-23-11</a>
-                    <a href="tel:+7 (944) 323-23-11">+7 (944) 323-23-11</a>
-                </div>
-                <div class="email">
-                    <p>Email</p>
-                    <a href="mailto:help@uni-kid.ru">help@uni-kid.ru</a>
-                    <a href="mailto:support@uni-kid.ru">support@uni-kid.ru</a>
-                </div>
-                <div class="social">
-                    <a href="#">
-                        <svg class="icon vk-icon">
-                            <use xlink:href="./assets/scss/sprites.svg#vk"></use>
+                        <div class="line"></div>
+                        <div class="total">
+                            <p class="sale">Скидка:<span>1000 ₽</span></p>
+                            <p class="payment__title total__title">К оплате:<span>5 999 ₽</span></p>
+                            <div class="btn btn-primary">Оплатить</div>
+                        </div>
+                        <svg class="flag">
+                            <use xlink:href="./assets/scss/sprites.svg#flag"></use>
                         </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon tg-icon">
-                            <use xlink:href="./assets/scss/sprites.svg#tg"></use>
-                        </svg>
-                    </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class=" footer__container container">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./assets/svg/footer-logo.svg" alt="Логотип">
+                    </div>
+                    <div class="author">
+                        <p>Автор графики:&nbsp;&nbsp;<span>Streamline</span></p>
+                        <p>&#169;Uni-kid.ru</p>
+                    </div>
+                </div>
+                <div class="policy">
+                    <ul class="policy__list">
+                        <li class="policy__item"><a href="#">Пользовательское соглашение</a></li>
+                        <li class="policy__item"><a href="#">Политика конфиденциальности</a></li>
+                        <li class="policy__item"><a href="#">Политика использования файлов cookie</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="./teachers.html">Преподаватели</a></li>
+                        <li class="menu__item"><a href="./tariffs.html">Тарифы</a></li>
+                        <li class="menu__item"><a href="">Программа курса</a></li>
+                        <li class="menu__item"><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="phone">
+                        <p>Телефон</p>
+                        <a href="tel:+7 (944) 323-23-11">+7 (944) 323-23-11</a>
+                        <a href="tel:+7 (944) 323-23-11">+7 (944) 323-23-11</a>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <a href="mailto:help@uni-kid.ru">help@uni-kid.ru</a>
+                        <a href="mailto:support@uni-kid.ru">support@uni-kid.ru</a>
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <svg class="icon vk-icon">
+                                <use xlink:href="./assets/scss/sprites.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon tg-icon">
+                                <use xlink:href="./assets/scss/sprites.svg#tg"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 </body>
+
 </html>
